@@ -143,11 +143,11 @@ struct OptionsView: View {
                                 
                                 Button {
                                     UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                                    fixNotification()
+                                    resetMobilePassword()
                                 } label: {
                                     Label(
-                                        title: { Text("Fix App Notification") },
-                                        icon: { Image(systemName: "wrench") }
+                                        title: { Text("Reset Mobile Password") },
+                                        icon: { Image(systemName: "key") }
                                     )
                                     .frame(maxWidth: .infinity)
                                     .padding(.vertical, 10)
